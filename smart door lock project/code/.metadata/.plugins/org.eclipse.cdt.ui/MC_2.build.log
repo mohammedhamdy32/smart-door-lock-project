@@ -1,0 +1,59 @@
+11:21:55 **** Incremental Build of configuration Debug for project MC_2 ****
+make all 
+Building file: ../MC2_main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MC2_main.d" -MT"MC2_main.o" -c -o "MC2_main.o" "../MC2_main.c"
+In file included from ../lcd.h:14,
+                 from ../application.h:12,
+                 from ../MC2_main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../application.h:13,
+                 from ../MC2_main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from ../MC2_main.c:9:
+../application.h:33:1: warning: "BUZZER_ON" redefined
+In file included from ../application.h:20,
+                 from ../MC2_main.c:9:
+../Buzzer.h:17:1: warning: this is the location of the previous definition
+In file included from ../MC2_main.c:9:
+../application.h:34:1: warning: "BUZZER_OFF" redefined
+In file included from ../application.h:20,
+                 from ../MC2_main.c:9:
+../Buzzer.h:18:1: warning: this is the location of the previous definition
+../MC2_main.c: In function 'main':
+../MC2_main.c:83: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../MC2_main.c: At top level:
+../application.h:43: warning: 'read_pass_from_eeprom' declared 'static' but never defined
+Finished building: ../MC2_main.c
+ 
+Building target: MC_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC_2.map -mmcu=atmega32 -o "MC_2.elf"  ./Buzzer.o ./LED.o ./MC2_main.o ./Timer1.o ./UART.o ./application.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./keypad.o ./lcd.o ./pwm_timer0.o ./twi.o   
+Finished building target: MC_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC_2.elf  >"MC_2.lss"
+Finished building: MC_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex MC_2.elf  "MC_2.hex"
+Finished building: MC_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   16008 bytes (48.9% Full)
+(.text + .data + .bootloader)
+
+Data:        289 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+11:21:56 Build Finished. 0 errors, 8 warnings. (took 663ms)
+

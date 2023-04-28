@@ -1,0 +1,163 @@
+01:05:28 **** Incremental Build of configuration Debug for project MC_1 ****
+make all 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -c -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building file: ../Buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Buzzer.d" -MT"Buzzer.o" -c -o "Buzzer.o" "../Buzzer.c"
+Finished building: ../Buzzer.c
+ 
+Building file: ../Timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Timer1.d" -MT"Timer1.o" -c -o "Timer1.o" "../Timer1.c"
+../Timer1.c: In function 'Timer1_setCallBack':
+../Timer1.c:57: warning: function return types not compatible due to 'volatile'
+Finished building: ../Timer1.c
+ 
+Building file: ../UART.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UART.d" -MT"UART.o" -c -o "UART.o" "../UART.c"
+Finished building: ../UART.c
+ 
+Building file: ../application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"application.d" -MT"application.o" -c -o "application.o" "../application.c"
+In file included from ../lcd.h:14,
+                 from ../application.h:13,
+                 from ../application.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../application.h:14,
+                 from ../application.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from ../application.c:8:
+../application.h:31:1: warning: "BUZZER_ON" redefined
+In file included from ../application.h:21,
+                 from ../application.c:8:
+../Buzzer.h:17:1: warning: this is the location of the previous definition
+In file included from ../application.c:8:
+../application.h:32:1: warning: "BUZZER_OFF" redefined
+In file included from ../application.h:21,
+                 from ../application.c:8:
+../Buzzer.h:18:1: warning: this is the location of the previous definition
+../application.c: In function 'step_1_set_password':
+../application.c:80: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c:119: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c:121: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c: In function 'take_password_and_cheak_it':
+../application.c:202: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c: In function 'step_4_change_password':
+../application.c:279: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c:286: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c:297: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c:302: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c: In function 'open_door':
+../application.c:333: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c:343: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c:353: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c: In function 'step_3_open_the_door':
+../application.c:382: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c:388: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c:402: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c:406: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../application.c: In function 'error_pass':
+../application.c:434: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+Finished building: ../application.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"keypad.d" -MT"keypad.o" -c -o "keypad.o" "../keypad.c"
+In file included from ../keypad.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../keypad.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../keypad.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.h:14,
+                 from ../lcd.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_integerToString':
+../lcd.c:176: warning: implicit declaration of function 'itoa'
+../lcd.c:177: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../lcd.h:14,
+                 from ../application.h:13,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../application.h:14,
+                 from ../main.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from ../main.c:10:
+../application.h:31:1: warning: "BUZZER_ON" redefined
+In file included from ../application.h:21,
+                 from ../main.c:10:
+../Buzzer.h:17:1: warning: this is the location of the previous definition
+In file included from ../main.c:10:
+../application.h:32:1: warning: "BUZZER_OFF" redefined
+In file included from ../application.h:21,
+                 from ../main.c:10:
+../Buzzer.h:18:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:33: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../main.c:35: warning: pointer targets in passing argument 1 of 'LCD_writeString' differ in signedness
+../main.c:37: warning: unused variable 'error_chang_pass_numbs'
+../main.c:36: warning: unused variable 'error_open_door_numbs'
+Finished building: ../main.c
+ 
+Building file: ../twi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"twi.d" -MT"twi.o" -c -o "twi.o" "../twi.c"
+Finished building: ../twi.c
+ 
+Building target: MC_1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MC_1.map -mmcu=atmega32 -o "MC_1.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./Buzzer.o ./Timer1.o ./UART.o ./application.o ./dc_motor.o ./external_eeprom.o ./gpio.o ./keypad.o ./lcd.o ./main.o ./twi.o   
+Finished building target: MC_1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MC_1.elf  >"MC_1.lss"
+Finished building: MC_1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MC_1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   20458 bytes (62.4% Full)
+(.text + .data + .bootloader)
+
+Data:        198 bytes (9.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+01:05:31 Build Finished. 0 errors, 38 warnings. (took 2s.364ms)
+
